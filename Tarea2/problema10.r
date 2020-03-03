@@ -1,11 +1,13 @@
 ##Importacion de librerias##
 library(markovchain)
 ##SCRIPT##
-P=matrix(c(0,.5,0,0,.5,.5,0,.5,0,0, 0,.5,0,.5,0,0,0,.5,0,.5,.5,0,0,.5,0), nrow=5, byrow=TRUE) ##CONVIERTE UN VECTOR A MATRIZ
+P=matrix(c(0,.5,0,0,.5,.5,0,.5,0,0, 0,.5,0,.5,0,0,0,.5,0,.5,.5,0,0,.5,0), nrow=5, byrow=TRUE) 
+##CONVIERTE UN VECTOR A MATRIZ
 ##INCISO A)
 P #IMPRIMIMOS LA MATRIZ
-mc=new('markovchain',transitionMatrix=P, states= c("0","1","2","3","4"), name="Problema 10 - Particula") ##CONVIERTE A CADENA DE MARKOV
-plot(mc)
+mc=new('markovchain',transitionMatrix=P, states= c("0","1","2","3","4"), name="Problema 10 - Particula") 
+##CONVIERTE A CADENA DE MARKOV
+plot(mc) ##GRAFICAMOS LA CADENA
 ##INCISO B)
 ####MATRIZ DE TRANSICION n Pasos
 m5mc=mc^5
