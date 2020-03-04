@@ -4,5 +4,3 @@ mc=new("markovchain",transitionMatrix=P,states=c('0','1','2','3'), name="Problem
 print(mc) ##IMPRIME LA MATRIZ DE TRANSICION
 plot(mc) ##CREA EL DIAGRAMA DE TRANSICION
 absorptionProbabilities(mc) ##REGRESA LAS PROBABILIDADES DE ABSORCION DE CADA ESTADO
-transitionProbability(mc,'1','3') #REGRESA LA PROBABILIDAD DE TRANSICION DE UN ESTADO A OTRO
-transitionProbability(mc,'2','3') #REGRESA LA PROBABILIDAD DE TRANSICION DE UN ESTADO A OTRO

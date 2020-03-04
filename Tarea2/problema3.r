@@ -1,7 +1,7 @@
 library(markovchain)
 P = matrix(c(0,(1/3),(1/3),(1/3),0,(1/3),0,(1/3),0,(1/3),(1/3),(1/3),0,0,(1/3),
     (1/2),0,0,0,(1/2),0,(1/3),(1/3),(1/3),0), nrow=5, byrow=TRUE)
-mc = new('markovchain',transitionMatrix = P, states = c ("1","2","3","4","5"), name = "Problema 3 - LABERINTO")
+mc = new('markovchain',transitionMatrix = P, states = c ("1","2","3","4","5"), name = "Problema 3 - Laberinto")
 #INCISO A
 print(mc)
 #INCISO B

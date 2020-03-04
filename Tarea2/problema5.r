@@ -1,7 +1,7 @@
 library(markovchain)
 P = matrix(c(0.95,0.04,0.01,0.06,0.9,0.04,0,0.1,0.9), nrow=3, byrow=TRUE)
 mc = new('markovchain',transitionMatrix = P, states = c ("N","A","S"), name = "Problema 5 - Evasores")
-mc
+print(mc)
 pis = steadyStates(mc)
 print(pis)
 print(pis*100)
