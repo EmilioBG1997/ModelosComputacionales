@@ -1,0 +1,8 @@
+library("queueing")
+p6<-NewInput.MM1(lambda=2,mu=2.7320,n=5)
+CheckInput(p6)
+summary(p6)
+p6sol<-QueueingModel(p6)
+Pn(p6sol)
+Qn(p6sol)
+summary(p6sol)

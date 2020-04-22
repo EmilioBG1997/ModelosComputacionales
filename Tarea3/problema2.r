@@ -1,0 +1,8 @@
+library("queueing")
+p2<-NewInput.MMC(lambda=1/15,mu=1/2,c=4)
+CheckInput(p2)
+summary(p2)
+solutionp2<-QueueingModel(p2)
+Pn(solutionp2)
+Qn(solutionp2)
+summary(solutionp2)
