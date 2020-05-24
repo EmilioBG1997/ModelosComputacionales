@@ -1,21 +1,17 @@
 #Calcular punto de reorden, cantidad optima
 #Son productos perecederos Por ser periodicos
 
-#c = costo de compra = 55
-#p = costo de venta = .75
-#costofaltantes =.75
-#costomantener =.01
-#d = unif(50~75)
-#####################################
-#######Newsboy(m,sd,p,c,s=0)#########
-#######m = media de la demanda#######
-#######p = precio / costoventa#######
-#######c = cuc/producir##############
-#######cuc->Costo unitario de compra#
-#######s = valor de rescate##########
-#####################################
+library('SCperf')
+c =.55 #compra
+p =.75 #Venta
+CF =.75 #costo por faltantes
+h =.01 #mantener
+dme = 50 #Demanda Menor
+dma = 75 #Demanda Mayor
+dpr = (dme+dma)/2 #Demanda Promedio
+var = ((50-75)*(50-75))/12
+sd = sqrt(var)
 
-
-#Calcular el optimo Periodicos a que nivel de servicio, inventario de seguridad
+Newsboy(dpr,sd,p,c,s=0)
 
 
